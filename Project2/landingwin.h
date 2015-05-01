@@ -2,6 +2,7 @@
 #define LANDINGWIN_H
 
 #include "MainHeader.h"
+#include "mainwindow.h"
 #include <QDialog>
 
 namespace Ui {
@@ -17,10 +18,11 @@ public:
     ~LandingWin();
 
 private slots:
+    void on_Enter_clicked();
 
 private:
     Ui::LandingWin *ui;
-    ClickLabel EnterLink;
+    MainWindow *parnt;
 };
 
 #endif // LANDINGWIN_H

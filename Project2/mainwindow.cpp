@@ -6,6 +6,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->hide();
+    lander = new LandingWin(this);
+    lander->show();
 }
 
 MainWindow::~MainWindow()

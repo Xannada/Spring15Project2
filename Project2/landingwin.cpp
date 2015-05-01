@@ -6,17 +6,17 @@ LandingWin::LandingWin(QWidget *parent) :
     ui(new Ui::LandingWin)
 {
     ui->setupUi(this);
+    parnt = parent;
 }
 
 LandingWin::~LandingWin()
 {
     delete ui;
+    parnt->show();
 }
 
-void LandingWin::on_EnterLink_linkActivated(const QString &link)
+void LandingWin::on_Enter_clicked()
 {
-    MainWindow main;
-    main.show();
-    this->hide();
-
+//    main->show();
+//    this->hide();
 }
