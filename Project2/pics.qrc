@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/backgrounds">
+        <file>Welcome.jpg</file>
+    </qresource>
+    <qresource prefix="/buttons"/>
+</RCC>
