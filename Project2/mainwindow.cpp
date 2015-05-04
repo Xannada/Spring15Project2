@@ -11,10 +11,18 @@ MainWindow::MainWindow(QWidget *parent) :
     lander.setModal(true);
     lander.exec();
 
+    ui->menubar->show();
+
     this->show();
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::on_actionAdmin_Login_triggered()
+{
+    adminLogin = new AdminLogin;
+    adminLogin->show();
 }

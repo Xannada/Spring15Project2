@@ -15,16 +15,19 @@ TEMPLATE = app
 SOURCES += main.cpp\
         landingwin.cpp \
     mainwindow.cpp \
-    adminwindow.cpp
+    adminwindow.cpp \
+    adminlogin.cpp
 
 HEADERS  += landingwin.h \
     mainwindow.h \
     MainHeader.h \
-    adminwindow.h
+    adminwindow.h \
+    adminlogin.h
 
 FORMS    += landingwin.ui \
     mainwindow.ui \
-    adminwindow.ui
+    adminwindow.ui \
+    adminlogin.ui
 
 RESOURCES += \
     pics.qrc
