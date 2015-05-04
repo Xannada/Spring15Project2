@@ -428,7 +428,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="infoedit">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -451,7 +451,7 @@
     <string>PushButton</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_2">
+  <widget class="QTextEdit" name="merchandiseedit">
    <property name="geometry">
     <rect>
      <x>320</x>

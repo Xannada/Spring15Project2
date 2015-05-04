@@ -3,6 +3,7 @@
 
 #include "landingwin.h"
 #include "mainwindow.h"
+#include "adminlogin.h"
 
 using namespace std;
 
