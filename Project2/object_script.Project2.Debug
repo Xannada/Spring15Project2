@@ -1,0 +1,12 @@
+INPUT(
+./debug/main.o
+./debug/landingwin.o
+./debug/mainwindow.o
+./debug/adminwindow.o
+./debug/stadium.o
+./debug/BinarySearchTree.o
+./debug/qrc_pics.o
+./debug/moc_landingwin.o
+./debug/moc_mainwindow.o
+./debug/moc_adminwindow.o
+);

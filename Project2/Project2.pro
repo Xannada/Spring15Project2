@@ -15,12 +15,16 @@ TEMPLATE = app
 SOURCES += main.cpp\
         landingwin.cpp \
     mainwindow.cpp \
-    adminwindow.cpp
+    adminwindow.cpp \
+    stadium.cpp \
+    BinarySearchTree.cpp
 
 HEADERS  += landingwin.h \
     mainwindow.h \
     MainHeader.h \
-    adminwindow.h
+    adminwindow.h \
+    stadium.h \
+    BinarySearchTree.h
 
 FORMS    += landingwin.ui \
     mainwindow.ui \
