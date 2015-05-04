@@ -16,23 +16,17 @@ SOURCES += main.cpp\
         landingwin.cpp \
     mainwindow.cpp \
     adminwindow.cpp \
-<<<<<<< HEAD
-    adminlogin.cpp
-=======
+    BinarySearchTree.cpp \
     stadium.cpp \
-    BinarySearchTree.cpp
->>>>>>> origin/master
+    adminlogin.cpp
 
 HEADERS  += landingwin.h \
     mainwindow.h \
     MainHeader.h \
     adminwindow.h \
-<<<<<<< HEAD
-    adminlogin.h
-=======
+    BinarySearchTree.h \
     stadium.h \
-    BinarySearchTree.h
->>>>>>> origin/master
+    adminlogin.h
 
 FORMS    += landingwin.ui \
     mainwindow.ui \
