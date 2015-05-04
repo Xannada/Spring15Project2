@@ -1,6 +1,9 @@
 <RCC>
     <qresource prefix="/backgrounds">
         <file>Welcome.jpg</file>
+        <file>diamond.png</file>
     </qresource>
-    <qresource prefix="/buttons"/>
+    <qresource prefix="/buttons">
+        <file>base.png</file>
+    </qresource>
 </RCC>

@@ -18,7 +18,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    LandingWin *lander;
+
 };
 
 #endif // MAINWINDOW_H

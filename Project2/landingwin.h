@@ -1,8 +1,7 @@
 #ifndef LANDINGWIN_H
 #define LANDINGWIN_H
 
-#include "MainHeader.h"
-#include "mainwindow.h"
+#include "landingwin.h"
 #include <QDialog>
 
 namespace Ui {
@@ -22,7 +21,6 @@ private slots:
 
 private:
     Ui::LandingWin *ui;
-    MainWindow *parnt;
 };
 
 #endif // LANDINGWIN_H

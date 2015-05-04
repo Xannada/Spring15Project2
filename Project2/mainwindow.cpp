@@ -7,8 +7,11 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     this->hide();
-    lander = new LandingWin(this);
-    lander->show();
+    LandingWin lander;
+    lander.setModal(true);
+    lander.exec();
+
+    this->show();
 }
 
 MainWindow::~MainWindow()
