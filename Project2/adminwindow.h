@@ -2,7 +2,10 @@
 #define ADMINWINDOW_H
 
 #include <QDialog>
+#include <vector>
+#include <QString>
 #include "newmerchandise.h"
+#include "merc.h"
 //#include "adminlogin.h"
 namespace Ui {
 class AdminWindow;
@@ -20,9 +23,13 @@ private slots:
 
     void on_editMerch_clicked();
 
+    void on_okay_clicked();
+
 private:
     Ui::AdminWindow *ui;
     newMerchandise *newMerch;
+    Merc merch;
+    vector<QString> stadium;
 
 };
 

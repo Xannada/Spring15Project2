@@ -2,6 +2,7 @@
 #define NEWMERCHANDISE_H
 
 #include <QWidget>
+#include "merc.h"
 namespace Ui {
 class newMerchandise;
 }
@@ -11,7 +12,8 @@ class newMerchandise : public QWidget
     Q_OBJECT
 
 public:
-    explicit newMerchandise(QWidget *parent = 0);
+    void setTableItems();
+    explicit newMerchandise(QString stadiumName, QWidget *parent = 0);
     ~newMerchandise();
 
 private slots:
@@ -23,6 +25,9 @@ private slots:
 
 private:
     Ui::newMerchandise *ui;
+    Merc merchandise;
+    vector<item> merchVec;
+    QString stad;
     //declare map of merch
     //index
 };

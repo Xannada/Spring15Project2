@@ -28,6 +28,8 @@ public:
     void deleteitem(QString stadium, int number);
     void additem(QString stadium, QString newname, double newprice);
     void addstadium(QString stadium);
+    vector<QString> stadiumList();
+    vector<item> itemlist(QString stadium);
 private:
     map<QString,vector<item> > theList;
     map<QString,vector<item> >::iterator itt;
