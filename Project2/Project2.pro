@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     stadium.cpp \
     adminlogin.cpp \
     newmerchandise.cpp \
-    teaminfo.cpp
+    teaminfo.cpp \
+    merc.cpp
 
 HEADERS  += landingwin.h \
     mainwindow.h \
@@ -30,7 +31,8 @@ HEADERS  += landingwin.h \
     stadium.h \
     adminlogin.h \
     newmerchandise.h \
-    teaminfo.h
+    teaminfo.h \
+    merc.h
 
 FORMS    += landingwin.ui \
     mainwindow.ui \
