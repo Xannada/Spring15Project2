@@ -6,7 +6,7 @@ Merc::Merc()
     QString key;
     QString reader;
     item temp;
-    QFile mercfile("//Users//annieraichev//Spring15Project2//Project2//MercList.txt");
+    QFile mercfile(":/files/MercList.txt");
 
     if(!mercfile.open(QFile::ReadOnly | QFile::Text))
     {
@@ -43,7 +43,7 @@ Merc::Merc()
 Merc::~Merc()
 {
     vector<item> temp;
-    QFile mercfile("//Users//annieraichev//Spring15Project2//Project2//MercList.txt");
+    QFile mercfile(":/files/MercList.txt");
 
     if(!mercfile.open(QFile::WriteOnly | QFile::Text))
     {
@@ -107,29 +107,25 @@ QString Merc::getName(QString stadium, int number)
 
 void Merc::changePrice(QString stadium, double newprice, int number)
 {
-    theList[stadium][number-1].price = newprice;
+    theList[stadium][number].price = newprice;
 }
 
 void Merc::changeName(QString stadium, QString newname, int number)
 {
-    theList[stadium][number-1].name = newname;
+    theList[stadium][number].name = newname;
 }
 
 void Merc::deleteitem(QString stadium, int number)
 {
     vector<item>::iterator itremove;
     itremove = theList[stadium].begin();
-    number--;
     itremove += number;
     theList[stadium].erase(itremove);
 }
 
-void Merc::additem(QString stadium, QString newname, double newprice)
+void Merc::additem(QString stadium, item newitem)
 {
-    item temp;
-    temp.name = newname;
-    temp.price = newprice;
-    theList[stadium].push_back(temp);
+    theList[stadium].push_back(newitem);
 }
 
 void Merc::addstadium(QString stadium)

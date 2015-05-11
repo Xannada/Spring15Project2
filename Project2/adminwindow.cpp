@@ -6,12 +6,11 @@ AdminWindow::AdminWindow(QWidget *parent) :
     ui(new Ui::AdminWindow)
 {
     ui->setupUi(this);
-    this->setWindowTitle("Merchandise Viewer");
 
     stadium = merch.stadiumList();
 
 
-    for (int index = 0; index < stadium.size(); index++)
+    for (unsigned int index = 0; index < stadium.size(); index++)
     {
         ui->stadiumList->addItem(stadium[index]);
     }

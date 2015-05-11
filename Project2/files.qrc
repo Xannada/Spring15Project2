@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/files">
+        <file>MercList.txt</file>
+    </qresource>
+</RCC>

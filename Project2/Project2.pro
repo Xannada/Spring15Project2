@@ -42,4 +42,5 @@ FORMS    += landingwin.ui \
     teaminfo.ui
 
 RESOURCES += \
-    pics.qrc
+    pics.qrc \
+    files.qrc

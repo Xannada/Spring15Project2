@@ -10,6 +10,7 @@ INPUT(
 ./release/teaminfo.o
 ./release/merc.o
 ./release/qrc_pics.o
+./release/qrc_files.o
 ./release/moc_landingwin.o
 ./release/moc_mainwindow.o
 ./release/moc_adminwindow.o
