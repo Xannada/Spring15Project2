@@ -9,6 +9,7 @@
 #include "adminlogin.h"
 #include "adminwindow.h"
 #include "newmerchandise.h"
+#include "merc.h"
 
 using namespace std;
 
