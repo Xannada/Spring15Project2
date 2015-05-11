@@ -428,16 +428,6 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QTextEdit" name="infoedit">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>251</width>
-     <height>321</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QPushButton" name="okay">
    <property name="geometry">
     <rect>
@@ -462,6 +452,16 @@
    </property>
    <property name="text">
     <string>Edit Merchandise for Stadiums</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="stadiumList">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>256</width>
+     <height>331</height>
+    </rect>
    </property>
   </widget>
  </widget>

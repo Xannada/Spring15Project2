@@ -6,6 +6,18 @@ AdminWindow::AdminWindow(QWidget *parent) :
     ui(new Ui::AdminWindow)
 {
     ui->setupUi(this);
+    this->setWindowTitle("Merchandise Viewer");
+
+    stadium = merch.stadiumList();
+
+
+    for (int index = 0; index < stadium.size(); index++)
+    {
+        ui->stadiumList->addItem(stadium[index]);
+    }
+
+
+
 }
 
 AdminWindow::~AdminWindow()
@@ -16,6 +28,21 @@ AdminWindow::~AdminWindow()
 
 void AdminWindow::on_editMerch_clicked()
 {
-    newMerch = new newMerchandise;
-    newMerch->show();
+
+    if(ui->stadiumList->currentItem() != NULL)
+    {
+        QString temp;
+        temp = ui->stadiumList->currentItem()->text();
+        newMerch = new newMerchandise(temp);
+        newMerch->show();
+    }
+    else
+    {
+        QMessageBox::information(this,"Error","Must select a stadium to edit its merchandise list.");
+    }
+}
+
+void AdminWindow::on_okay_clicked()
+{
+    this->close();
 }

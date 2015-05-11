@@ -6,7 +6,7 @@ Merc::Merc()
     QString key;
     QString reader;
     item temp;
-    QFile mercfile("D:\\GitHub\\Spring15Project2\\Project2\\MercList.txt");
+    QFile mercfile("//Users//annieraichev//Spring15Project2//Project2//MercList.txt");
 
     if(!mercfile.open(QFile::ReadOnly | QFile::Text))
     {
@@ -43,7 +43,7 @@ Merc::Merc()
 Merc::~Merc()
 {
     vector<item> temp;
-    QFile mercfile("D:\\GitHub\\Spring15Project2\\Project2\\MercList.txt");
+    QFile mercfile("//Users//annieraichev//Spring15Project2//Project2//MercList.txt");
 
     if(!mercfile.open(QFile::WriteOnly | QFile::Text))
     {
@@ -135,4 +135,26 @@ void Merc::additem(QString stadium, QString newname, double newprice)
 void Merc::addstadium(QString stadium)
 {
     theList[stadium];
+}
+
+vector<QString> Merc::stadiumList()
+{
+    vector<QString> temp;
+    itt = theList.begin();
+
+    for(;itt != theList.end(); itt++)
+    {
+        temp.push_back(itt->first);
+    }
+    return temp;
+}
+
+//returns a vector of merch items according to which stadium
+vector<item> Merc::itemlist(QString stadium)
+{
+    vector<item> stadiumMerc;
+
+    stadiumMerc = theList[stadium];
+
+    return stadiumMerc;
 }
