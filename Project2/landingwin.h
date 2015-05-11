@@ -1,7 +1,6 @@
 #ifndef LANDINGWIN_H
 #define LANDINGWIN_H
 
-#include "landingwin.h"
 #include <QDialog>
 
 namespace Ui {

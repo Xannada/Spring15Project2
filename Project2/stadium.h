@@ -1,7 +1,28 @@
 #ifndef STADIUM_H
 #define STADIUM_H
 
-#include "MainHeader.h"
+//#include "MainHeader.h"
+
+#include <QString>
+
+using namespace std;
+
+
+struct stadiumNode
+{
+    string stadiumName;
+    string teamName;
+    string address1;
+    string address2;
+    string phone;
+    string opening;
+    string capacity;
+    bool fieldType; // 0 for grass
+    bool league;    // 0 for American
+
+    stadiumNode *next;
+    stadiumNode *prev;
+};
 
 class stadium
 {

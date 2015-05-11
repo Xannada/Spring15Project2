@@ -2,7 +2,8 @@
 #define ADMINWINDOW_H
 
 #include <QDialog>
-
+#include "newmerchandise.h"
+//#include "adminlogin.h"
 namespace Ui {
 class AdminWindow;
 }
@@ -15,8 +16,14 @@ public:
     explicit AdminWindow(QWidget *parent = 0);
     ~AdminWindow();
 
+private slots:
+
+    void on_editMerch_clicked();
+
 private:
     Ui::AdminWindow *ui;
+    newMerchandise *newMerch;
+
 };
 
 #endif // ADMINWINDOW_H

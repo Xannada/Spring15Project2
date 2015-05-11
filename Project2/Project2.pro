@@ -18,7 +18,9 @@ SOURCES += main.cpp\
     adminwindow.cpp \
     BinarySearchTree.cpp \
     stadium.cpp \
-    adminlogin.cpp
+    adminlogin.cpp \
+    newmerchandise.cpp \
+    teaminfo.cpp
 
 HEADERS  += landingwin.h \
     mainwindow.h \
@@ -26,12 +28,16 @@ HEADERS  += landingwin.h \
     adminwindow.h \
     BinarySearchTree.h \
     stadium.h \
-    adminlogin.h
+    adminlogin.h \
+    newmerchandise.h \
+    teaminfo.h
 
 FORMS    += landingwin.ui \
     mainwindow.ui \
     adminwindow.ui \
-    adminlogin.ui
+    adminlogin.ui \
+    newmerchandise.ui \
+    teaminfo.ui
 
 RESOURCES += \
     pics.qrc

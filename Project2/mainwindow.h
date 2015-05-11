@@ -1,9 +1,12 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include "MainHeader.h"
-#include "adminlogin.h"
+
 #include <QMainWindow>
+#include "adminlogin.h"
+//#include "adminwindow.h"
+#include "landingwin.h"
+#include "teaminfo.h"
 
 namespace Ui {
 class MainWindow;
@@ -20,9 +23,12 @@ public:
 private slots:
     void on_actionAdmin_Login_triggered();
 
+    void on_TeamInfo_clicked();
+
 private:
     Ui::MainWindow *ui;
     AdminLogin *adminLogin;
+    TeamInfo *teamInfo;
 
 };
 

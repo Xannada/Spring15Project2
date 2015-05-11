@@ -3,6 +3,11 @@
 
 #include "landingwin.h"
 #include "mainwindow.h"
+//#include "BinarySearchTree.h"
+#include "stadium.h"
+#include "adminlogin.h"
+#include "adminwindow.h"
+#include "newmerchandise.h"
 
 using namespace std;
 
@@ -10,24 +15,23 @@ using namespace std;
 #include <iostream>
 #include <string>
 
-struct stadiumNode
-{
-    string stadiumName;
-    string teamName;
-    string address1;
-    string address2;
-    string phone;
-    string opening;
-    string capacity;
-    bool fieldType; // 0 for grass
-    bool league;    // 0 for American
+//struct stadiumNode
+//{
+//    string stadiumName;
+//    string teamName;
+//    string address1;
+//    string address2;
+//    string phone;
+//    string opening;
+//    string capacity;
+//    bool fieldType; // 0 for grass
+//    bool league;    // 0 for American
 
-    stadiumNode *next;
-    stadiumNode *prev;
-};
+//    stadiumNode *next;
+//    stadiumNode *prev;
+//};
 
-#include "BinarySearchTree.h"
-#include "stadium.h"
+
 
 //#include "Graph.h"
 //#include "Stadium.h"

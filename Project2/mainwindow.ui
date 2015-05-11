@@ -445,7 +445,7 @@
      <pixmap resource="pics.qrc">:/backgrounds/diamond.png</pixmap>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="cart">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -455,7 +455,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Cart</string>
     </property>
     <property name="flat">
      <bool>true</bool>
@@ -547,7 +547,7 @@
    <zorder>label_3</zorder>
    <zorder>TeamInfo</zorder>
    <zorder>PlanTour</zorder>
-   <zorder>pushButton</zorder>
+   <zorder>cart</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -555,7 +555,7 @@
      <x>0</x>
      <y>0</y>
      <width>719</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMenu_Options">

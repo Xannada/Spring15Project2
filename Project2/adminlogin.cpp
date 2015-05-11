@@ -20,7 +20,7 @@ void AdminLogin::on_login_clicked()
 
      if(username == "admin" && password == "meowistheword")
      {
-         AdminWindow *w = new AdminWindow();
+         AdminWindow *w = new AdminWindow;
          w->show();
          this->close();
      }
