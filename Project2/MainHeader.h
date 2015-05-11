@@ -3,15 +3,12 @@
 
 #include "landingwin.h"
 #include "mainwindow.h"
-<<<<<<< HEAD
-#include "adminlogin.h"
-=======
+
 //#include "BinarySearchTree.h"
 #include "stadium.h"
 #include "adminlogin.h"
 #include "adminwindow.h"
 #include "newmerchandise.h"
->>>>>>> meow
 
 using namespace std;
 
