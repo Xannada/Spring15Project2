@@ -12,3 +12,10 @@ AdminWindow::~AdminWindow()
 {
     delete ui;
 }
+
+
+void AdminWindow::on_editMerch_clicked()
+{
+    newMerch = new newMerchandise;
+    newMerch->show();
+}

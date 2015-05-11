@@ -2,7 +2,7 @@
 #define BINARYSEARCHTREE_H
 
 
-#include "MainHeader.h"
+//#include "MainHeader.h"
 
 class bTree
 {

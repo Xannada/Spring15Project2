@@ -26,3 +26,9 @@ void MainWindow::on_actionAdmin_Login_triggered()
     adminLogin = new AdminLogin;
     adminLogin->show();
 }
+
+void MainWindow::on_TeamInfo_clicked()
+{
+    teamInfo = new TeamInfo;
+    teamInfo ->show();
+}
