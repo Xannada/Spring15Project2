@@ -112,82 +112,79 @@ class stadium
 			switch(index)
 			{
 			case(0):
-					location ="";
+					location ="Safeco Field";
 					break;
 			case(1):
-					location ="";
+					location ="AT&T Park/O.co Coliseum";
 					break;
 			case(2):
-					location ="";
+					location ="Dodger Stadium/Angel Stadium";
 					break;
 			case(3):
-					location ="";
+					location ="PETCO Park";
 					break;
 			case(4):
-					location ="";
+					location ="Chase Field";
 					break;
 			case(5):
-					location ="";
+					location ="Coors Field";
 					break;
 			case(6):
-					location ="";
+					location ="Rangers Ballpark";
 					break;
 			case(7):
-					location ="";
+					location ="Minute Maid Park";
 					break;
 			case(8):
-					location ="";
+					location ="Kauffman Stadium";
 					break;
 			case(9):
-					location ="";
+					location ="Target Field";
 					break;
 			case(10):
-					location ="";
+					location ="Busch Stadium";
 					break;
 			case(11):
-					location ="";
+					location ="Miller Park";
 					break;
 			case(12):
-					location ="";
+					location ="Wrigley Field/US Cellular Field";
 					break;
 			case(13):
-					location ="";
+					location ="Great American Ballpark";
 					break;
 			case(14):
-					location ="";
+					location ="Comerica Park";
 					break;
 			case(15):
-					location ="";
+					location ="Turner Field";
 					break;
 			case(16):
-					location ="";
+					location ="Progressive Field";
 					break;
 			case(17):
-					location ="";
+					location ="Rogers Center";
 					break;
 			case(18):
-					location ="";
+					location ="PNC Center";
 					break;
 			case(19):
-					location ="";
+					location ="Tropicana Field";
 					break;
 			case(20):
-					location ="";
+					location ="Marlin Field";
 					break;
 			case(21):
-					location ="";
+					location ="Nationals Park/Camden Yards";
 					break;
 			case(22):
-					location ="";
+					location ="Citizens Bank Park";
 					break;
 			case(23):
-					location ="";
+					location ="Citi Field/Yankee Stadium";
 					break;
 			case(24):
-					location ="";
-					break;
-			case(25):
-					location ="";
+					location ="Fenway Park";
 					break;
 			}
 

@@ -5,7 +5,7 @@ int main()
 	stadium test;
 
 	test.readList();
-	test.setAddress1("Comerica Park", "TEST");
+	test.MST();
 	test.writeList();
 
 	return 0;
