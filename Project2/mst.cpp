@@ -53,7 +53,7 @@ void MST::writeFile()
     vector<node> temp;
     QFile distances(":/files/Distances.txt");
 
-    if(!mercfile.open(QFile::WriteOnly | QFile::Text))
+    if(!distances.open(QFile::WriteOnly | QFile::Text))
     {
         QMessageBox::warning(0,"Cannot Open to Write", distances.errorString());
     }
@@ -61,17 +61,17 @@ void MST::writeFile()
     {
         QTextStream out(&distances);
 
-        itt = theList.begin();
-        for(;itt != theList.end(); itt++)
+        itt = stadiumDistances.begin();
+        for(;itt != stadiumDistances.end(); itt++)
         {
-            if(itt != theList.begin())
+            if(itt != stadiumDistances.begin())
                 out << endl;
             out << itt->first << endl;  //output key
             temp = itt->second;
 
             for(int i=0; i < temp.size() ; i++)
             {
-                out << temp[i].name << endl << temp[i].price << endl;
+                out << temp[i].name << endl << temp[i].distance << endl;
             }
             out << 0;
         }
