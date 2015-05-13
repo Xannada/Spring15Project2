@@ -445,7 +445,7 @@
      <bool>true</bool>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="mainpage">
      <property name="palette">
@@ -1129,6 +1129,9 @@
         <height>321</height>
        </rect>
       </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>122</number>
+      </attribute>
      </widget>
      <widget class="QPushButton" name="BacktoMain3">
       <property name="geometry">

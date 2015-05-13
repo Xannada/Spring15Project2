@@ -17,13 +17,15 @@ SOURCES += main.cpp\
     mainwindow.cpp \
     merc.cpp \
     stadium.cpp \
-    heap.cpp
+    heap.cpp \
+    mst.cpp
 
 HEADERS  += landingwin.h \
     mainwindow.h \
     merc.h \
     stadium.h \
-    heap.h
+    heap.h \
+    mst.h
 
 FORMS    += landingwin.ui \
     mainwindow.ui

@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent) :
     }
     ui->MainStack->setCurrentIndex(0);
 
-    defaultHeap = 0;
+    defaultHeap = new Heap<Item, QString>;
 
     ui->CartDisplay->setShowGrid(true);
     ui->CartDisplay->setColumnCount(5);
@@ -29,25 +29,25 @@ MainWindow::MainWindow(QWidget *parent) :
                                                              << "Total");
 
 //    //cart is breaking, for testing...causes crash
-//    Item q;
-//    q.set(5,25.99,"Baseball cap","Fenway Park");
-//    Item b;
-//    b.set(1,35.35,"Baseball bat","Dodger Stadium");
-//    Item c;
-//    c.set(2,12.99,"Team pennant","Rogers Centre");
-//    Item d;
-//    d.set(7,19.99,"Autographed baseball","Rogers Centre");
-//    Item e;
-//    e.set(7,19.99,"Autographed baseball","Rogers Centre");
-//    Item f;
-//    f.set(7,19.99,"Autographed baseball","Rogers Centre");
+    Item q;
+    q.set(5,25.99,"Baseball cap","Fenway Park");
+    Item b;
+    b.set(1,35.35,"Baseball bat","Dodger Stadium");
+    Item c;
+    c.set(2,12.99,"Team pennant","Rogers Centre");
+    Item d;
+    d.set(7,19.99,"Autographed baseball","Rogers Centre");
+    Item e;
+    e.set(7,19.99,"Autographed baseball","Rogers Centre");
+    Item f;
+    f.set(7,19.99,"Autographed baseball","Rogers Centre");
 
-//    defaultHeap->insert(q, q.type);
-//    defaultHeap->insert(b, b.type);
-//    defaultHeap->insert(c, c.type);
-//    defaultHeap->insert(d, d.type);
-//    defaultHeap->insert(e, e.type);
-//    defaultHeap->insert(f, f.type);
+    defaultHeap->insert(q, q.type);
+    defaultHeap->insert(b, b.type);
+    defaultHeap->insert(c, c.type);
+    defaultHeap->insert(d, d.type);
+    defaultHeap->insert(e, e.type);
+    defaultHeap->insert(f, f.type);
 
 
 
@@ -63,6 +63,7 @@ MainWindow::~MainWindow()
     merchandise.SavetoFile();
     delete ui;
     delete tablemodel;
+    delete defaultHeap;
 }
 
 void MainWindow::on_TeamInfo_clicked()
@@ -101,7 +102,7 @@ bool MainWindow::createConnection()
     query.exec("insert into stadium values('O.co Coliseum','Oakland Athletics','7000 Coliseum Way\nOakland, CA 94621','(510) 569-2121','1966 September 18','37,090 (April - August) & 55,945 (Sept - Jan)','Grass','American')");
     query.exec("insert into stadium values('Oriole Park at Camden Yards','Baltimore Orioles','333 West Camden Street\nBaltimore, MD 21201','(410) 685-9800','1992 April 6','48,187','Grass','American')");
     query.exec("insert into stadium values('Progressive Field','Cleveland Indians','2401 Ontario Street\nCleveland, OH 44115','(216) 420-4487','1994 April 2','42,404','Grass','American')");
-    query.exec("insert into stadium values('Rogers Centre','Toronto Blue Jays','1 Blue Jays Way\nToronto, Ontario, Canada M5V1J3','+1 416-341-1000','1989 June 3','49,282','Turf','American')");
+    query.exec("insert into stadium values('Rogers Centre','Toronto Blue Jays','1 Blue Jays Way\nToronto, Ontario, Canada M5V1J3','(416) 341-1000','1989 June 3','49,282','Turf','American')");
     query.exec("insert into stadium values('SafeCo Field','Seattle Mariners','1516 First Avenue South\nSeattle, WA 98134','(206) 346-4000','1999 July 15','47,476','Grass','American')");
     query.exec("insert into stadium values('Target Field','Minnesota Twins','353 N 5th St\nMinneapolis, MN 55403','(800) 338-9467','2010 April 12','39,021','Grass','American')");
     query.exec("insert into stadium values('Tropicana Field','Tampa Bay Rays','1 Tropicana Dr\nSt. Petersburg, FL 33705','(727) 825-3137','1990 March 3','31,042 (Regular Season) 42,735 (Postseason)','Turf','American')");
@@ -194,11 +195,11 @@ void MainWindow::on_EditMercDist_clicked()
 {
     QSqlQuery query;
     QModelIndex ind = ui->TeamEdit->currentIndex();
-
+    tempvari = ui->TeamEdit->currentIndex().data();
     //need to get the index and then query for stadium name
-//    tempvari = query.value(ind);
-//    tempvari.convert()
-//    stadiumNametoEditMerc =
+//    tempvari = query.value("select stadiumName from stadium");
+
+    stadiumNametoEditMerc = tempvari.toString();
 
     ui->MainStack->setCurrentIndex(ui->MainStack->indexOf(ui->MerchandiseEdit));
     ui->editinglabel->setText(stadiumNametoEditMerc);
@@ -347,7 +348,7 @@ void MainWindow::on_stadiumButton_clicked()
         newHeap->insert(copyHeap->min(), copyHeap->min().stadium);
         copyHeap->removeMin();
     }
-    populateTable(newHeap);
+    this->populateTable(newHeap);
 }
 
 void MainWindow::on_priceButton_clicked()
@@ -370,6 +371,7 @@ void MainWindow::on_typeButton_clicked()
 }
 
 void MainWindow::populateTable(Heap<Item, QString> *itemsHeap){
+    ui->CartDisplay->setRowCount(0);
     int row = 0;
     int col = 0;
     int itemQuantity = 1;
@@ -395,6 +397,7 @@ void MainWindow::populateTable(Heap<Item, QString> *itemsHeap){
         itemTotal = float(itemQuantity) * price->text().toFloat();
         QTableWidgetItem *quantity = new QTableWidgetItem(QString::number(itemQuantity));
         QTableWidgetItem *total    = new QTableWidgetItem(QString::number(itemTotal));
+        ui->CartDisplay->setRowCount(ui->CartDisplay->rowCount() + 1);
         ui->CartDisplay->setItem(row, col, type);
         ui->CartDisplay->setItem(row, ++col, stadium);
         ui->CartDisplay->setItem(row, ++col, price);
@@ -407,6 +410,7 @@ void MainWindow::populateTable(Heap<Item, QString> *itemsHeap){
 }
 
 void MainWindow::populateTable(Heap<Item, float> *itemsHeap){
+    ui->CartDisplay->setRowCount(0);
     int row = 0;
     int col = 0;
     int itemQuantity = 1;
@@ -432,6 +436,7 @@ void MainWindow::populateTable(Heap<Item, float> *itemsHeap){
         itemTotal = float(itemQuantity) * price->text().toFloat();
         QTableWidgetItem *quantity = new QTableWidgetItem(QString::number(itemQuantity));
         QTableWidgetItem *total    = new QTableWidgetItem(QString::number(itemTotal));
+        ui->CartDisplay->setRowCount(ui->CartDisplay->rowCount() + 1);
         ui->CartDisplay->setItem(row, col, type);
         ui->CartDisplay->setItem(row, ++col, stadium);
         ui->CartDisplay->setItem(row, ++col, price);

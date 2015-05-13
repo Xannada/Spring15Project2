@@ -16,6 +16,7 @@
 #include "landingwin.h"
 #include "merc.h"
 #include "heap.h"
+#include "mst.h"
 
 
 namespace Ui {

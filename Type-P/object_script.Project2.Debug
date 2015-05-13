@@ -5,6 +5,7 @@ INPUT(
 ./debug/merc.o
 ./debug/stadium.o
 ./debug/heap.o
+./debug/mst.o
 ./debug/qrc_pics.o
 ./debug/qrc_files.o
 ./debug/moc_landingwin.o
