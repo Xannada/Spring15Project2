@@ -6,7 +6,7 @@ Merc::Merc()
     QString key;
     QString reader;
     item temp;
-    QFile mercfile("MercList.txt");
+    QFile mercfile("//Users//annieraichev//Spring15Project2//Type-P//MercList.txt");
 
     if(!mercfile.open(QFile::ReadOnly | QFile::Text))
     {

@@ -16,6 +16,8 @@ MainWindow::MainWindow(QWidget *parent) :
     }
     ui->MainStack->setCurrentIndex(0);
 
+    ui->navigateTrip->setCurrentIndex(0);
+
     defaultHeap = new Heap<Item, QString>;
 
     ui->CartDisplay->setShowGrid(true);
@@ -193,8 +195,6 @@ void MainWindow::on_ToTripPage_clicked()
 
 void MainWindow::on_EditMercDist_clicked()
 {
-    QSqlQuery query;
-    QModelIndex ind = ui->TeamEdit->currentIndex();
     tempvari = ui->TeamEdit->currentIndex().data();
     //need to get the index and then query for stadium name
 //    tempvari = query.value("select stadiumName from stadium");
@@ -204,7 +204,7 @@ void MainWindow::on_EditMercDist_clicked()
     ui->MainStack->setCurrentIndex(ui->MainStack->indexOf(ui->MerchandiseEdit));
     ui->editinglabel->setText(stadiumNametoEditMerc);
 
-//for merchandise table
+   //for merchandise table
     ui->merchList->setShowGrid(true);
     ui->merchList->setColumnCount(2);
     ui->merchList->setRowCount(0);
@@ -248,6 +248,39 @@ void MainWindow::setMercTableItems()
         }
     }
 }
+
+void MainWindow::BuyTable()
+{
+    ui->merchTable->clear();
+    QStringList headers;
+    headers << "Name" << "Price";
+    QString currentStadium;
+
+    // currentStadium =  vector.at(currentTravelindex);
+    ui->currentS->setText(currentStadium);
+
+
+    ui->merchTable->setHorizontalHeaderLabels(headers);
+    merchVec = merchandise.itemlist(currentStadium);
+
+    ui->merchTable->setRowCount(merchVec.size());
+
+    //index used synonymously for row
+    for(unsigned int index = 0; index < merchVec.size(); index++)
+    {
+        QStringList merchFields;
+//        QString merchName = ;
+        QString merchPrice = QString::number(merchVec[index].price);
+        merchFields << merchVec[index].name << merchPrice;
+
+        for (int column = 0; column < 2; column++)
+        {
+            QTableWidgetItem *newItem = new QTableWidgetItem(merchFields.at(column));
+            ui->merchTable->setItem(index, column, newItem);
+        }
+    }
+}
+
 
 void MainWindow::on_add_clicked()
 {
@@ -471,4 +504,85 @@ void MainWindow::on_newStadium_clicked()
         ui->TeamEdit->show();
         ui->newStadiumName->clear();
     }
+}
+
+
+void MainWindow::on_visitAllBttn_clicked()
+{
+    ui->next->setEnabled(true);
+    ui->navigateTrip->setCurrentIndex(ui->navigateTrip->indexOf(ui->all));
+    //merchTable
+
+    //get MST from mst class. will be returned as a vector.
+   currentTravelIndex = 0;
+
+   //for merchandise table
+    ui->merchTable->setShowGrid(true);
+    ui->merchTable->setColumnCount(2);
+    ui->merchTable->setRowCount(0);
+    ui->merchTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
+
+    this->BuyTable();
+
+
+}
+
+void MainWindow::on_angelsBttn_clicked()
+{
+    ui->navigateTrip->setCurrentIndex(ui->navigateTrip->indexOf(ui->angelsStart));
+    QStringList headers;
+    headers << "Name" << "Price";
+
+    //get dijkstras will be returned as vector
+   // distTo = dijkatrasblahba
+
+    ui->angelsStart->setHorizontalHeaderLabels(headers);
+    ui->angelsStart->setShowGrid(true);
+    ui->angelsStart->setColumnCount(2);
+    ui->angelsStart->setRowCount(distTo.size());
+    ui->angelsTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
+
+    //index used synonymously for row
+    for(unsigned int index = 0; index < merchVec.size(); index++)
+    {
+        QStringList stadiumFields;
+//        QString merchName = ;
+       // QString stadiumFields = QString::number(distTo[index]....(get dist))..
+       // stadiumFields << merchVec[index].name << merchPrice;
+
+        for (int column = 0; column < 2; column++)
+        {
+            QTableWidgetItem *newItem = new QTableWidgetItem(merchFields.at(column));
+            ui->angelsTable->setItem(index, column, newItem);
+        }
+    }
+
+
+
+
+}
+
+void MainWindow::on_customBttn_clicked()
+{
+    ui->navigateTrip->setCurrentIndex(ui->navigateTrip->indexOf(ui->custom));
+}
+
+void MainWindow::on_next_clicked()
+{
+    currentTravelIndex++;
+    this->BuyTable();
+
+    if(currentTravelIndex == merchVec.size())
+    {
+        ui->next->setEnabled(false);
+    }
+
+}
+
+void MainWindow::on_buy_clicked()
+{
+    item currentMerch = merchVec.at(ui->merchTable->currentRow());
+    Item i;
+    i.set(1,currentMerch.price,currentMerch.name, ui->currentS->text());
+    defaultHeap->insert(i,i.type);
 }

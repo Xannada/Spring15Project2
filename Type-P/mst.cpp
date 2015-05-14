@@ -15,7 +15,7 @@ void MST::readFile()
     QString key;
     QString reader;
     node temp;
-    QFile distances("Distances.txt");
+    QFile distances("//Users//annieraichev//Spring15Project2//Type-P//Distances.txt");
 
     if(!distances.open(QFile::ReadOnly | QFile::Text))
     {

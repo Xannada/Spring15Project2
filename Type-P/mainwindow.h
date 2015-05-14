@@ -76,6 +76,17 @@ private slots:
 
     void on_newStadium_clicked();
 
+
+    void on_visitAllBttn_clicked();
+
+    void on_angelsBttn_clicked();
+
+    void on_customBttn_clicked();
+
+    void on_next_clicked();
+
+    void on_buy_clicked();
+
 private:
     Ui::MainWindow *ui;
     //sql
@@ -83,6 +94,7 @@ private:
     QSqlTableModel *tablemodel;
     QVariant tempvari;
     //merchandies disatance variables
+    //map aka merc type variable
     Merc merchandise;
     vector<item> merchVec;
     vector<QString> distTo;
@@ -97,6 +109,9 @@ private:
     void setMercTableItems();
     void populateTable(Heap<Item, QString> *itemsHeap);
     void populateTable(Heap<Item, float> *itemsHeap);
+
+    void BuyTable();
+    int currentTravelIndex;
 
 };
 
