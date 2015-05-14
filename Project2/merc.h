@@ -26,7 +26,7 @@ public:
     void changePrice(QString stadium, double newprice, int number);
     void changeName(QString stadium, QString newname, int number);
     void deleteitem(QString stadium, int number);
-    void additem(QString stadium, QString newname, double newprice);
+    void additem(QString stadium, item newitem);
     void addstadium(QString stadium);
     vector<QString> stadiumList();
     vector<item> itemlist(QString stadium);

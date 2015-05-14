@@ -1,0 +1,13 @@
+INPUT(
+./release/main.o
+./release/landingwin.o
+./release/mainwindow.o
+./release/merc.o
+./release/stadium.o
+./release/heap.o
+./release/mst.o
+./release/qrc_pics.o
+./release/qrc_files.o
+./release/moc_landingwin.o
+./release/moc_mainwindow.o
+);

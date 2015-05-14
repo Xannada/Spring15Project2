@@ -28,8 +28,6 @@ private:
     Merc merchandise;
     vector<item> merchVec;
     QString stad;
-    //declare map of merch
-    //index
 };
 
 #endif // NEWMERCHANDISE_H

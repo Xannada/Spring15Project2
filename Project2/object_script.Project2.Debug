@@ -10,6 +10,7 @@ INPUT(
 ./debug/teaminfo.o
 ./debug/merc.o
 ./debug/qrc_pics.o
+./debug/qrc_files.o
 ./debug/moc_landingwin.o
 ./debug/moc_mainwindow.o
 ./debug/moc_adminwindow.o
