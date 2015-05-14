@@ -341,14 +341,33 @@ void MainWindow::on_delete_2_clicked()
 
 void MainWindow::on_CheckConnection_clicked()
 {
-    //check if stadiumNametoEditMerc and the selected stadium are connected
-    //if yes check the check box if no uncheck it
-    //if yes display dist otherwise 0
+    if(ui->distList->currentItem() != NULL)
+    {
+        QString temp = ui->distList->currentItem()->text();
+        int d = distmap->distanceOfTwo(stadiumNametoEditMerc, temp);
+
+        if(d == 0)
+        {
+            ui->ConNoCon->setChecked(false);
+            ui->DirectDist->setText("Not Connected");
+        }
+        else
+        {
+            ui->ConNoCon->setChecked(true);
+            ui->DirectDist->setText(QString::number(d));
+        }
+    }
 }
 
 void MainWindow::on_UpdateDistance_clicked()
 {
-    //take in check box and distance and update the distances / matrix accordingly
+    bool ok = false;
+    QString temp = ui->DirectDist->text();
+    int d = temp.toInt(&ok);
+    if(ui->ConNoCon->isChecked() && ok && ui->distList->currentItem() != NULL)
+    {
+        distmap->changeDistance(stadiumNametoEditMerc,ui->distList->currentItem()->text(), d);
+    }
 }
 
 void MainWindow::on_SaveAndBack_clicked()
@@ -483,7 +502,7 @@ void MainWindow::populateTable(Heap<Item, float> *itemsHeap){
 
 void MainWindow::on_PlanTour_clicked()
 {
-
+    ui->MainStack->setCurrentIndex(ui->MainStack->indexOf(ui->TripPage));
 }
 
 void MainWindow::on_newStadium_clicked()
@@ -536,10 +555,10 @@ void MainWindow::on_angelsBttn_clicked()
     //get dijkstras will be returned as vector
    // distTo = dijkatrasblahba
 
-    ui->angelsStart->setHorizontalHeaderLabels(headers);
-    ui->angelsStart->setShowGrid(true);
-    ui->angelsStart->setColumnCount(2);
-    ui->angelsStart->setRowCount(distTo.size());
+    ui->angelsTable->setHorizontalHeaderLabels(headers);
+    ui->angelsTable->setShowGrid(true);
+    ui->angelsTable->setColumnCount(2);
+    ui->angelsTable->setRowCount(distTo.size());
     ui->angelsTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
     //index used synonymously for row
@@ -552,14 +571,10 @@ void MainWindow::on_angelsBttn_clicked()
 
         for (int column = 0; column < 2; column++)
         {
-            QTableWidgetItem *newItem = new QTableWidgetItem(merchFields.at(column));
+            QTableWidgetItem *newItem = new QTableWidgetItem(stadiumFields.at(column));
             ui->angelsTable->setItem(index, column, newItem);
         }
     }
-
-
-
-
 }
 
 void MainWindow::on_customBttn_clicked()

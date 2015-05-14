@@ -103,6 +103,9 @@ private:
     //Shopping cart
     Heap<Item, QString> *defaultHeap;
 
+    //MST
+    MST *distmap;
+
     //private methods
     bool createConnection();
     void initializeModel(QSqlTableModel *model);

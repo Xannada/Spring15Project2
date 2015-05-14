@@ -21,9 +21,15 @@ public:
     MST();
     ~MST();
 
-    void MSToutput();
+
     void readFile();
     void writeFile();
+    void addNewStadium(QString n);
+    void changeDistance(QString current, QString n, int d);
+    int distanceOfTwo(QString current, QString dest);
+    vector<node> distToOthers(QString n);
+    vector<QString> MSToutput(int& totalDist);
+
 
 private:
     map<QString,vector<node> > stadiumDistances;

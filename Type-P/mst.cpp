@@ -5,7 +5,8 @@ MST::MST()
 
 }
 
-void MST::MSToutput()
+//calculates the MST and returns it in order, and the total distance
+vector<QString> MST::MSToutput(int &totalDist)
 {
 
 }
@@ -15,7 +16,7 @@ void MST::readFile()
     QString key;
     QString reader;
     node temp;
-    QFile distances("//Users//annieraichev//Spring15Project2//Type-P//Distances.txt");
+    QFile distances("Distances.txt");
 
     if(!distances.open(QFile::ReadOnly | QFile::Text))
     {
@@ -69,7 +70,7 @@ void MST::writeFile()
             out << itt->first << endl;  //output key
             temp = itt->second;
 
-            for(int i=0; i < temp.size() ; i++)
+            for(unsigned int i=0; i < temp.size() ; i++)
             {
                 out << temp[i].name << endl << temp[i].distance << endl;
             }
@@ -79,4 +80,44 @@ void MST::writeFile()
     }
 
     distances.close();
+}
+
+void MST::addNewStadium(QString n)
+{
+    stadiumDistances[n];
+}
+
+void MST::changeDistance(QString current, QString n, int d)
+{
+    vector<node>::iterator it2 = stadiumDistances[current].begin();
+
+    while(it2 != stadiumDistances[current].end() && it2->name != n)
+    {
+        it2++;
+    }
+    if(it2->name == n)
+    {
+        it2->distance = d;
+    }
+}
+
+int MST::distanceOfTwo(QString current, QString dest)
+{
+    int i = 0;
+    vector<node>::iterator it2 = stadiumDistances[current].begin();
+
+    while(it2 != stadiumDistances[current].end() && it2->name != dest)
+    {
+        it2++;
+    }
+    if(it2->name == dest)
+    {
+        i = it2->distance;
+    }
+    return i;
+}
+
+vector<node> MST::distToOthers(QString n)
+{
+    return stadiumDistances[n];
 }
