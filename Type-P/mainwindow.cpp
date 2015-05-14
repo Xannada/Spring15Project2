@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -640,13 +641,34 @@ void MainWindow::on_customBttn_clicked()
 void MainWindow::on_next_clicked()
 {
     currentTravelIndex++;
+
     if(onBuy)
     {
-        this->BuyTable();
+        qDebug() << "regular buy\n " ;
+        if(currentTravelIndex == merchVec.size() )
+        {
+            ui->next->setEnabled(false);
+            QMessageBox *end = new QMessageBox;
+            end->setText("You have reached the end of your trip !\n Come back Soon!");
+            end->exec();
+        }else{
+            this->BuyTable();
+        }
     }
     else
     {
+        qDebug() << "custom buy\n " ;
+        if(currentTravelIndex == choices->size() )
+        {
+            ui->next->setEnabled(false);
+            QMessageBox *end = new QMessageBox;
+            end->setText("You have reached the end of your trip !\n Come back Soon!");
+            end->exec();
+        }
+        else{
         this->CustomBuy();
+        }
+
     }
 
     if(currentTravelIndex == merchVec.size())
@@ -678,7 +700,9 @@ void MainWindow::on_go_clicked()
     ui->customTrip->setCurrentIndex(ui->customTrip->indexOf(ui->others));
     onBuy = false;
     int currentIndex = ui->startList->currentRow();
-     startStadium = distTo[currentIndex];
+         startStadium = distTo[currentIndex];
+     qDebug() << "current Index " << QString::number(currentIndex);
+     qDebug() << "Current Stadium " << startStadium;
 
 
     ui->otherList->clear();
@@ -710,8 +734,9 @@ void MainWindow::on_go2_clicked()
     {
         if(ui->otherList->isItemSelected(item))
         {
-           currentRowIndex = ui->otherList->currentRow();
-           choices->push_back(distTo[currentRowIndex]);
+           //currentRowIndex = ui->otherList->currentRow();
+           choices->push_back(distTo[row]);
+           qDebug() << distTo[row];
 
         }
 
