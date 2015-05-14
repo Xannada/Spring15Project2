@@ -8,6 +8,9 @@ newMerchandise::newMerchandise(QString stadiumName, QWidget *parent) :
     ui->setupUi(this);
     stad = stadiumName;
 
+    this->setWindowTitle("Merchandise Viewer");
+
+
     ui->merchList->setShowGrid(true);
     ui->merchList->setColumnCount(2);
     ui->merchList->setRowCount(0);
