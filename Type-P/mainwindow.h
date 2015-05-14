@@ -87,6 +87,11 @@ private slots:
 
     void on_buy_clicked();
 
+
+    void on_go_clicked();
+
+    void on_go2_clicked();
+
 private:
     Ui::MainWindow *ui;
     //sql
@@ -114,7 +119,11 @@ private:
     void populateTable(Heap<Item, float> *itemsHeap);
 
     void BuyTable();
+    void CustomBuy();
     int currentTravelIndex;
+    QString startStadium;
+    bool onBuy;
+    vector<QString> *choices;
 
 };
 

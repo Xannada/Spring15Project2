@@ -57,6 +57,10 @@ MainWindow::MainWindow(QWidget *parent) :
     lander.setModal(true);
     lander.exec();
 
+    //used to keep track of indexes in the buy tables
+    currentTravelIndex = 0;
+    onBuy = false;
+
     this->show();
 }
 
@@ -279,6 +283,44 @@ void MainWindow::BuyTable()
             ui->merchTable->setItem(index, column, newItem);
         }
     }
+}
+
+
+
+void MainWindow::CustomBuy()
+{
+    ui->merchTable->clear();
+    QStringList headers;
+    headers << "Name" << "Price";
+    QString currentStadium;
+
+    //check in morning
+    currentStadium =  choices->at(currentTravelIndex);
+    ui->currentS->setText(currentStadium);
+
+
+    ui->merchTable->setHorizontalHeaderLabels(headers);
+    merchVec = merchandise.itemlist(currentStadium);
+
+    ui->merchTable->setRowCount(merchVec.size());
+
+    //index used synonymously for row
+    for(unsigned int index = 0; index < merchVec.size(); index++)
+    {
+        QStringList merchFields;
+//        QString merchName = ;
+        QString merchPrice = QString::number(merchVec[index].price);
+        merchFields << merchVec[index].name << merchPrice;
+
+        for (int column = 0; column < 2; column++)
+        {
+            QTableWidgetItem *newItem = new QTableWidgetItem(merchFields.at(column));
+            ui->merchTable->setItem(index, column, newItem);
+        }
+    }
+
+    ///figure out what to do about next button becuase it calls buy table
+    /// //declare a boolean in header file, switch it on or off
 }
 
 
@@ -541,6 +583,7 @@ void MainWindow::on_visitAllBttn_clicked()
     ui->merchTable->setRowCount(0);
     ui->merchTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
+    onBuy = true;
     this->BuyTable();
 
 
@@ -580,12 +623,31 @@ void MainWindow::on_angelsBttn_clicked()
 void MainWindow::on_customBttn_clicked()
 {
     ui->navigateTrip->setCurrentIndex(ui->navigateTrip->indexOf(ui->custom));
+    ui->customTrip->setCurrentIndex(ui->customTrip->indexOf(ui->starting));
+    //ui->starting->setCurrentIndex(ui->starting->indexOf(ui->starting));
+
+    ui->startList->clear();
+    distTo = merchandise.stadiumList();
+
+
+    for(unsigned int index = 0; index < distTo.size(); index ++)
+    {
+        ui->startList->addItem(distTo[index]);
+    }
+
 }
 
 void MainWindow::on_next_clicked()
 {
     currentTravelIndex++;
-    this->BuyTable();
+    if(onBuy)
+    {
+        this->BuyTable();
+    }
+    else
+    {
+        this->CustomBuy();
+    }
 
     if(currentTravelIndex == merchVec.size())
     {
@@ -596,8 +658,84 @@ void MainWindow::on_next_clicked()
 
 void MainWindow::on_buy_clicked()
 {
+    if(ui->merchTable->currentItem() != NULL)
+    {
     item currentMerch = merchVec.at(ui->merchTable->currentRow());
     Item i;
     i.set(1,currentMerch.price,currentMerch.name, ui->currentS->text());
     defaultHeap->insert(i,i.type);
+    }
+    else
+    {
+        QMessageBox *error = new QMessageBox;
+        error->setText("Please select something to buy!");
+        error->exec();
+    }
+}
+
+void MainWindow::on_go_clicked()
+{
+    ui->customTrip->setCurrentIndex(ui->customTrip->indexOf(ui->others));
+    onBuy = false;
+    int currentIndex = ui->startList->currentRow();
+     startStadium = distTo[currentIndex];
+
+
+    ui->otherList->clear();
+
+    distTo = merchandise.stadiumList();
+
+    for (int index = 0; index < distTo.size(); index ++)
+    {
+        ui->otherList->addItem(distTo[index]);
+    }
+
+    ui->otherList->setRowHidden(currentIndex, true);
+
+}
+
+void MainWindow::on_go2_clicked()
+{
+   //from selected choices, pass into dijkstras
+
+    QListWidgetItem *item = new QListWidgetItem;
+   choices = new vector<QString>;
+    choices->push_back(startStadium);
+    int currentRowIndex;
+
+    int row = 0;
+    item = ui->otherList->item(row);
+
+    while(item != NULL)
+    {
+        if(ui->otherList->isItemSelected(item))
+        {
+           currentRowIndex = ui->otherList->currentRow();
+           choices->push_back(distTo[currentRowIndex]);
+
+        }
+
+          row++;
+
+
+        item = ui->otherList->item(row);
+
+    }
+
+    ///at end of this take vector that was built and do dijkstas to it
+    //then re route ui to
+    ui->next->setEnabled(true);
+    ui->navigateTrip->setCurrentIndex(ui->navigateTrip->indexOf(ui->all));
+    //merchTable
+
+   currentTravelIndex = 0;
+
+   //for merchandise table
+    ui->merchTable->setShowGrid(true);
+    ui->merchTable->setColumnCount(2);
+    ui->merchTable->setRowCount(0);
+    ui->merchTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
+
+    this->CustomBuy();
+
 }
