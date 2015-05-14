@@ -21,12 +21,12 @@ public:
     MST();
     ~MST();
 
-
     void readFile();
     void writeFile();
     void addNewStadium(QString n);
     void changeDistance(QString current, QString n, int d);
     int distanceOfTwo(QString current, QString dest);
+    void tree();
     vector<node> distToOthers(QString n);
     vector<QString> MSToutput(int& totalDist);
 

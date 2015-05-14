@@ -16,14 +16,12 @@ SOURCES += main.cpp\
         landingwin.cpp \
     mainwindow.cpp \
     merc.cpp \
-    stadium.cpp \
     heap.cpp \
     mst.cpp
 
 HEADERS  += landingwin.h \
     mainwindow.h \
     merc.h \
-    stadium.h \
     heap.h \
     mst.h
 

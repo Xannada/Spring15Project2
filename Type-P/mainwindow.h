@@ -12,6 +12,7 @@
 #include <QDialog>
 #include <vector>
 #include <QString>
+#include <QDebug>
 
 #include "landingwin.h"
 #include "merc.h"
@@ -92,12 +93,20 @@ private slots:
 
     void on_go2_clicked();
 
+    void on_cartBttn_clicked();
+
+    void on_ToTeamInfo_clicked();
+
+    void on_BacktoMain_clicked();
+
 private:
     Ui::MainWindow *ui;
+
     //sql
     QSqlDatabase db;
     QSqlTableModel *tablemodel;
     QVariant tempvari;
+
     //merchandies disatance variables
     //map aka merc type variable
     Merc merchandise;
@@ -111,19 +120,25 @@ private:
     //MST
     MST *distmap;
 
+    //trip varies
+    unsigned int currentTravelIndex;
+    QString startStadium;
+    bool callRegularBuyTable;
+    vector<QString> *choices;
+
     //private methods
     bool createConnection();
     void initializeModel(QSqlTableModel *model);
     void setMercTableItems();
     void populateTable(Heap<Item, QString> *itemsHeap);
     void populateTable(Heap<Item, float> *itemsHeap);
-
     void BuyTable();
     void CustomBuy();
-    int currentTravelIndex;
-    QString startStadium;
-    bool onBuy;
-    vector<QString> *choices;
+
+
+    //extra
+    vector<QString> ToDoList;
+    void toDoReminder();
 
 };
 

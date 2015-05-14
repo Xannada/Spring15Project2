@@ -6,7 +6,7 @@ Merc::Merc()
     QString key;
     QString reader;
     item temp;
-    QFile mercfile("//Users//annieraichev//Spring15Project2//Type-P//MercList.txt");
+    QFile mercfile("MercList.txt");
 
     if(!mercfile.open(QFile::ReadOnly | QFile::Text))
     {
@@ -153,8 +153,9 @@ vector<QString> Merc::stadiumList()
 vector<item> Merc::itemlist(QString stadium)
 {
     vector<item> stadiumMerc;
-
-    stadiumMerc = theList[stadium];
-
-    return stadiumMerc;
+    itt = theList.find(stadium);
+    if(itt != theList.end())
+        return itt->second;
+    else
+        return stadiumMerc;
 }

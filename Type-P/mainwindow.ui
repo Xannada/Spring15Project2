@@ -22,8 +22,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>631</width>
-      <height>471</height>
+      <width>721</width>
+      <height>571</height>
      </rect>
     </property>
     <property name="palette">
@@ -445,7 +445,7 @@
      <bool>true</bool>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="mainpage">
      <property name="palette">
@@ -879,7 +879,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="pics.qrc">:/backgrounds/diamond.png</pixmap>
+       <pixmap resource="pics.qrc">:/backgrounds/project pictures/diamond.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -898,7 +898,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="pics.qrc">:/backgrounds/ballgame_icon.png</pixmap>
+       <pixmap resource="pics.qrc">:/backgrounds/project pictures/ballgame_icon.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -933,7 +933,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="pics.qrc">:/buttons/base.png</pixmap>
+       <pixmap resource="pics.qrc">:/buttons/project pictures/base.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -968,7 +968,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="pics.qrc">:/buttons/base.png</pixmap>
+       <pixmap resource="pics.qrc">:/buttons/project pictures/base.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1003,7 +1003,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="pics.qrc">:/buttons/base.png</pixmap>
+       <pixmap resource="pics.qrc">:/buttons/project pictures/base.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1022,7 +1022,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="pics.qrc">:/buttons/base.png</pixmap>
+       <pixmap resource="pics.qrc">:/buttons/project pictures/base.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1118,8 +1118,8 @@
      <widget class="QLabel" name="label_11">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>40</y>
+        <x>90</x>
+        <y>30</y>
         <width>191</width>
         <height>51</height>
        </rect>
@@ -1136,10 +1136,10 @@
      <widget class="QStackedWidget" name="navigateTrip">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>20</y>
-        <width>311</width>
-        <height>391</height>
+        <x>350</x>
+        <y>40</y>
+        <width>321</width>
+        <height>401</height>
        </rect>
       </property>
       <property name="currentIndex">
@@ -1150,10 +1150,10 @@
        <widget class="QTableWidget" name="merchTable">
         <property name="geometry">
          <rect>
-          <x>40</x>
-          <y>140</y>
-          <width>231</width>
-          <height>191</height>
+          <x>50</x>
+          <y>90</y>
+          <width>221</width>
+          <height>201</height>
          </rect>
         </property>
         <property name="selectionMode">
@@ -1190,8 +1190,8 @@
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>340</y>
-          <width>81</width>
+          <y>350</y>
+          <width>111</width>
           <height>32</height>
          </rect>
         </property>
@@ -1202,14 +1202,40 @@
        <widget class="QPushButton" name="next">
         <property name="geometry">
          <rect>
-          <x>160</x>
-          <y>340</y>
+          <x>190</x>
+          <y>350</y>
           <width>113</width>
           <height>32</height>
          </rect>
         </property>
         <property name="text">
-         <string>Next&gt;&gt;</string>
+         <string>Next &gt;&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>310</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Distacne Traveled:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="traveledDist">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>310</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
         </property>
        </widget>
       </widget>
@@ -1255,7 +1281,7 @@
          <widget class="QLabel" name="label_15">
           <property name="geometry">
            <rect>
-            <x>30</x>
+            <x>60</x>
             <y>10</y>
             <width>201</width>
             <height>61</height>
@@ -1282,10 +1308,10 @@
          <widget class="QListWidget" name="otherList">
           <property name="geometry">
            <rect>
-            <x>20</x>
+            <x>40</x>
             <y>70</y>
             <width>201</width>
-            <height>231</height>
+            <height>241</height>
            </rect>
           </property>
           <property name="editTriggers">
@@ -1300,7 +1326,7 @@
          <widget class="QLabel" name="label_14">
           <property name="geometry">
            <rect>
-            <x>50</x>
+            <x>60</x>
             <y>20</y>
             <width>151</width>
             <height>16</height>
@@ -1326,9 +1352,9 @@
          <widget class="QPushButton" name="go">
           <property name="geometry">
            <rect>
-            <x>90</x>
+            <x>80</x>
             <y>320</y>
-            <width>81</width>
+            <width>91</width>
             <height>32</height>
            </rect>
           </property>
@@ -1343,7 +1369,7 @@
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>80</x>
         <y>110</y>
         <width>191</width>
         <height>301</height>
@@ -1377,8 +1403,8 @@
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>420</y>
-        <width>511</width>
+        <y>510</y>
+        <width>671</width>
         <height>32</height>
        </rect>
       </property>
@@ -1404,7 +1430,7 @@
         </spacer>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_8">
+        <widget class="QPushButton" name="ToTeamInfo">
          <property name="text">
           <string>Team Information</string>
          </property>
@@ -1424,7 +1450,7 @@
         </spacer>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_5">
+        <widget class="QPushButton" name="BacktoMain">
          <property name="text">
           <string>Back To Main</string>
          </property>

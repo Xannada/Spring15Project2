@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -20,37 +19,36 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->navigateTrip->setCurrentIndex(0);
 
     defaultHeap = new Heap<Item, QString>;
+    choices = new vector<QString>;
 
+    //initialize cart table
     ui->CartDisplay->setShowGrid(true);
     ui->CartDisplay->setColumnCount(5);
     ui->CartDisplay->setRowCount(0);
     ui->CartDisplay->setEditTriggers(QAbstractItemView::NoEditTriggers);
-    ui->CartDisplay->setHorizontalHeaderLabels(QStringList() << "Item"
-                                                             << "Stadium"
-                                                             << "Unit Price"
-                                                             << "Quantity"
-                                                             << "Total");
+    ui->CartDisplay->setHorizontalHeaderLabels(QStringList() << "Item" << "Stadium" << "Unit Price" << "Quantity" << "Total");
+    //initialize merchandise table for trip
+    ui->merchTable->setShowGrid(true);
+    ui->merchTable->setColumnCount(2);
+    ui->merchTable->setRowCount(0);
+    ui->merchTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    ui->merchTable->setHorizontalHeaderLabels(QStringList() << "Name" << "Price");
+    //initialize merchList table for admin
+    ui->merchList->setShowGrid(true);
+    ui->merchList->setColumnCount(2);
+    ui->merchList->setRowCount(0);
+    ui->merchList->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    ui->merchList->setHorizontalHeaderLabels(QStringList() << "Name" << "Price");
+    //initialize angelstable
+    ui->angelsTable->setShowGrid(true);
+    ui->angelsTable->setColumnCount(2);
+    ui->angelsTable->setRowCount(0);
+    ui->angelsTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    ui->angelsTable->setHorizontalHeaderLabels(QStringList() << "Name" << "Price");
 
-//    //cart is breaking, for testing...causes crash
     Item q;
-    q.set(5,25.99,"Baseball cap","Fenway Park");
-    Item b;
-    b.set(1,35.35,"Baseball bat","Dodger Stadium");
-    Item c;
-    c.set(2,12.99,"Team pennant","Rogers Centre");
-    Item d;
-    d.set(7,19.99,"Autographed baseball","Rogers Centre");
-    Item e;
-    e.set(7,19.99,"Autographed baseball","Rogers Centre");
-    Item f;
-    f.set(7,19.99,"Autographed baseball","Rogers Centre");
-
+    q.set(1,25.99,"Test item","Test Park");
     defaultHeap->insert(q, q.type);
-    defaultHeap->insert(b, b.type);
-    defaultHeap->insert(c, c.type);
-    defaultHeap->insert(d, d.type);
-    defaultHeap->insert(e, e.type);
-    defaultHeap->insert(f, f.type);
 
 
 
@@ -60,17 +58,32 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //used to keep track of indexes in the buy tables
     currentTravelIndex = 0;
-    onBuy = false;
+    callRegularBuyTable = false;
 
     this->show();
 }
 
 MainWindow::~MainWindow()
 {
+    this->toDoReminder();
     merchandise.SavetoFile();
     delete ui;
     delete tablemodel;
     delete defaultHeap;
+    choices->clear();
+    delete choices;
+}
+
+void MainWindow::toDoReminder()
+{
+    vector<QString>::iterator outit;
+    outit = ToDoList.begin();
+    qDebug() << "To Do List:\n";
+    for(;outit != ToDoList.end();outit++)
+    {
+        qDebug() << *outit << endl;
+    }
+    qDebug() << "Find and remove debug messages.\nEnd to Do List\n";
 }
 
 void MainWindow::on_TeamInfo_clicked()
@@ -166,9 +179,7 @@ void MainWindow::on_login_clicked()
     }
     else
     {
-       QMessageBox *denied = new QMessageBox;
-       denied->setText("Wrong password, try Again");
-       denied->exec();
+        QMessageBox::warning(this,"Invalid","Wrong password, try Again");
     }
 }
 
@@ -201,24 +212,17 @@ void MainWindow::on_ToTripPage_clicked()
 void MainWindow::on_EditMercDist_clicked()
 {
     tempvari = ui->TeamEdit->currentIndex().data();
-    //need to get the index and then query for stadium name
-//    tempvari = query.value("select stadiumName from stadium");
 
     stadiumNametoEditMerc = tempvari.toString();
 
     ui->MainStack->setCurrentIndex(ui->MainStack->indexOf(ui->MerchandiseEdit));
     ui->editinglabel->setText(stadiumNametoEditMerc);
 
-   //for merchandise table
-    ui->merchList->setShowGrid(true);
-    ui->merchList->setColumnCount(2);
-    ui->merchList->setRowCount(0);
-    ui->merchList->setEditTriggers(QAbstractItemView::NoEditTriggers);
-
     this->setMercTableItems();
 
 //for distance editing
     ui->distList->clear();
+    distTo.clear();
     distTo = merchandise.stadiumList();
 
     for (unsigned int index = 0; index < distTo.size(); index++)
@@ -229,11 +233,8 @@ void MainWindow::on_EditMercDist_clicked()
 
 void MainWindow::setMercTableItems()
 {
-    ui->merchList->clear();
-    QStringList headers;
-    headers << "Name" << "Price";
+    ui->merchList->clearContents();
 
-    ui->merchList->setHorizontalHeaderLabels(headers);
     merchVec = merchandise.itemlist(stadiumNametoEditMerc);
 
     ui->merchList->setRowCount(merchVec.size());
@@ -242,7 +243,6 @@ void MainWindow::setMercTableItems()
     for(unsigned int index = 0; index < merchVec.size(); index++)
     {
         QStringList merchFields;
-//        QString merchName = ;
         QString merchPrice = QString::number(merchVec[index].price);
         merchFields << merchVec[index].name << merchPrice;
 
@@ -250,22 +250,20 @@ void MainWindow::setMercTableItems()
         {
             QTableWidgetItem *newItem = new QTableWidgetItem(merchFields.at(column));
             ui->merchList->setItem(index, column, newItem);
+            delete newItem;
         }
     }
 }
 
 void MainWindow::BuyTable()
 {
-    ui->merchTable->clear();
-    QStringList headers;
-    headers << "Name" << "Price";
-    QString currentStadium;
+    ui->merchTable->clearContents();
+    QString currentStadium = "Eror Fix Me!!";
 
-    // currentStadium =  vector.at(currentTravelindex);
+    ToDoList.push_back("in BuyTable uncomment out the curent stadium after mst finished");
+    // currentStadium =  choices->at(currentTravelindex);
     ui->currentS->setText(currentStadium);
 
-
-    ui->merchTable->setHorizontalHeaderLabels(headers);
     merchVec = merchandise.itemlist(currentStadium);
 
     ui->merchTable->setRowCount(merchVec.size());
@@ -274,7 +272,6 @@ void MainWindow::BuyTable()
     for(unsigned int index = 0; index < merchVec.size(); index++)
     {
         QStringList merchFields;
-//        QString merchName = ;
         QString merchPrice = QString::number(merchVec[index].price);
         merchFields << merchVec[index].name << merchPrice;
 
@@ -282,6 +279,7 @@ void MainWindow::BuyTable()
         {
             QTableWidgetItem *newItem = new QTableWidgetItem(merchFields.at(column));
             ui->merchTable->setItem(index, column, newItem);
+            delete newItem;
         }
     }
 }
@@ -290,17 +288,12 @@ void MainWindow::BuyTable()
 
 void MainWindow::CustomBuy()
 {
-    ui->merchTable->clear();
-    QStringList headers;
-    headers << "Name" << "Price";
-    QString currentStadium;
+    ui->merchTable->clearContents();
+    QString currentStadium = "Eror Fix Me!!";
 
-    //check in morning
     currentStadium =  choices->at(currentTravelIndex);
     ui->currentS->setText(currentStadium);
 
-
-    ui->merchTable->setHorizontalHeaderLabels(headers);
     merchVec = merchandise.itemlist(currentStadium);
 
     ui->merchTable->setRowCount(merchVec.size());
@@ -309,7 +302,6 @@ void MainWindow::CustomBuy()
     for(unsigned int index = 0; index < merchVec.size(); index++)
     {
         QStringList merchFields;
-//        QString merchName = ;
         QString merchPrice = QString::number(merchVec[index].price);
         merchFields << merchVec[index].name << merchPrice;
 
@@ -317,11 +309,9 @@ void MainWindow::CustomBuy()
         {
             QTableWidgetItem *newItem = new QTableWidgetItem(merchFields.at(column));
             ui->merchTable->setItem(index, column, newItem);
+            delete newItem;
         }
     }
-
-    ///figure out what to do about next button becuase it calls buy table
-    /// //declare a boolean in header file, switch it on or off
 }
 
 
@@ -384,6 +374,7 @@ void MainWindow::on_delete_2_clicked()
 
 void MainWindow::on_CheckConnection_clicked()
 {
+    ToDoList.push_back("Fix Check Connection ya asshole...");
     if(ui->distList->currentItem() != NULL)
     {
         QString temp = ui->distList->currentItem()->text();
@@ -404,6 +395,7 @@ void MainWindow::on_CheckConnection_clicked()
 
 void MainWindow::on_UpdateDistance_clicked()
 {
+    ToDoList.push_back("Fix update distance ya asshole...");
     bool ok = false;
     QString temp = ui->DirectDist->text();
     int d = temp.toInt(&ok);
@@ -550,6 +542,7 @@ void MainWindow::on_PlanTour_clicked()
 
 void MainWindow::on_newStadium_clicked()
 {
+    ToDoList.push_back("Fix add new stadium ya asshole...");
     if(QMessageBox::Yes == QMessageBox::question(this,"Are you sure?","Add a new stadium to the database?",QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes))
     {
         QString temp;
@@ -573,51 +566,44 @@ void MainWindow::on_visitAllBttn_clicked()
 {
     ui->next->setEnabled(true);
     ui->navigateTrip->setCurrentIndex(ui->navigateTrip->indexOf(ui->all));
-    //merchTable
 
+//
     //get MST from mst class. will be returned as a vector.
-   currentTravelIndex = 0;
+    choices->clear();
+//    *choices = MST VECTOR RETURNED
+    ToDoList.push_back("Calculate the MST for visitAllbttn");
+//
 
-   //for merchandise table
-    ui->merchTable->setShowGrid(true);
-    ui->merchTable->setColumnCount(2);
-    ui->merchTable->setRowCount(0);
-    ui->merchTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
-
-    onBuy = true;
+    currentTravelIndex = 0;
+    callRegularBuyTable = true;
     this->BuyTable();
-
-
 }
 
 void MainWindow::on_angelsBttn_clicked()
 {
     ui->navigateTrip->setCurrentIndex(ui->navigateTrip->indexOf(ui->angelsStart));
-    QStringList headers;
-    headers << "Name" << "Price";
+    ui->angelsTable->clearContents();
 
     //get dijkstras will be returned as vector
-   // distTo = dijkatrasblahba
+///    distTo = dijkatrasblahba
+    ToDoList.push_back("Calculate the dijkstras for angels, and fix so they update");
+//
 
-    ui->angelsTable->setHorizontalHeaderLabels(headers);
-    ui->angelsTable->setShowGrid(true);
-    ui->angelsTable->setColumnCount(2);
-    ui->angelsTable->setRowCount(distTo.size());
-    ui->angelsTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
     //index used synonymously for row
     for(unsigned int index = 0; index < merchVec.size(); index++)
     {
         QStringList stadiumFields;
-//        QString merchName = ;
-       // QString stadiumFields = QString::number(distTo[index]....(get dist))..
-       // stadiumFields << merchVec[index].name << merchPrice;
+//        QString stadiumFields = QString::number(distTo[index]....(get dist))..
+//        stadiumFields << merchVec[index].name << merchPrice;
 
         for (int column = 0; column < 2; column++)
         {
             QTableWidgetItem *newItem = new QTableWidgetItem(stadiumFields.at(column));
             ui->angelsTable->setItem(index, column, newItem);
+            delete newItem;
         }
+        ui->angelsTable->setRowCount(index);
     }
 }
 
@@ -625,24 +611,26 @@ void MainWindow::on_customBttn_clicked()
 {
     ui->navigateTrip->setCurrentIndex(ui->navigateTrip->indexOf(ui->custom));
     ui->customTrip->setCurrentIndex(ui->customTrip->indexOf(ui->starting));
-    //ui->starting->setCurrentIndex(ui->starting->indexOf(ui->starting));
 
     ui->startList->clear();
-    distTo = merchandise.stadiumList();
+    ui->otherList->clear();
+    choices->clear();
+    distTo.clear();
 
+    distTo = merchandise.stadiumList();
 
     for(unsigned int index = 0; index < distTo.size(); index ++)
     {
         ui->startList->addItem(distTo[index]);
+        ui->otherList->addItem(distTo[index]);
     }
-
 }
 
 void MainWindow::on_next_clicked()
 {
     currentTravelIndex++;
 
-    if(onBuy)
+    if(callRegularBuyTable)
     {
         qDebug() << "regular buy\n " ;
         if(currentTravelIndex == merchVec.size() )
@@ -651,6 +639,7 @@ void MainWindow::on_next_clicked()
             QMessageBox *end = new QMessageBox;
             end->setText("You have reached the end of your trip !\n Come back Soon!");
             end->exec();
+            delete end;
         }else{
             this->BuyTable();
         }
@@ -664,11 +653,12 @@ void MainWindow::on_next_clicked()
             QMessageBox *end = new QMessageBox;
             end->setText("You have reached the end of your trip !\n Come back Soon!");
             end->exec();
+            delete end;
         }
-        else{
-        this->CustomBuy();
+        else
+        {
+            this->CustomBuy();
         }
-
     }
 
     if(currentTravelIndex == merchVec.size())
@@ -676,6 +666,8 @@ void MainWindow::on_next_clicked()
         ui->next->setEnabled(false);
     }
 
+    ToDoList.push_back("in on_next_clicked update the label for traveled dist");
+//    ui->traveledDist->setText();
 }
 
 void MainWindow::on_buy_clicked()
@@ -692,75 +684,70 @@ void MainWindow::on_buy_clicked()
         QMessageBox *error = new QMessageBox;
         error->setText("Please select something to buy!");
         error->exec();
+        delete error;
     }
 }
 
 void MainWindow::on_go_clicked()
 {
     ui->customTrip->setCurrentIndex(ui->customTrip->indexOf(ui->others));
-    onBuy = false;
+    callRegularBuyTable = false;
+
     int currentIndex = ui->startList->currentRow();
-         startStadium = distTo[currentIndex];
-     qDebug() << "current Index " << QString::number(currentIndex);
-     qDebug() << "Current Stadium " << startStadium;
+    choices->push_back(distTo[currentIndex]);
 
-
-    ui->otherList->clear();
-
-    distTo = merchandise.stadiumList();
-
-    for (int index = 0; index < distTo.size(); index ++)
-    {
-        ui->otherList->addItem(distTo[index]);
-    }
+    qDebug() << "current Index " << QString::number(currentIndex);
+    qDebug() << "Current Stadium " << choices->front();
 
     ui->otherList->setRowHidden(currentIndex, true);
-
 }
 
 void MainWindow::on_go2_clicked()
 {
-   //from selected choices, pass into dijkstras
-
     QListWidgetItem *item = new QListWidgetItem;
-   choices = new vector<QString>;
-    choices->push_back(startStadium);
-    int currentRowIndex;
-
     int row = 0;
+
     item = ui->otherList->item(row);
 
     while(item != NULL)
     {
         if(ui->otherList->isItemSelected(item))
         {
-           //currentRowIndex = ui->otherList->currentRow();
-           choices->push_back(distTo[row]);
-           qDebug() << distTo[row];
-
+            choices->push_back(distTo[row]);
+            qDebug() << distTo[row];
         }
-
-          row++;
-
+        row++;
 
         item = ui->otherList->item(row);
-
     }
 
-    ///at end of this take vector that was built and do dijkstas to it
-    //then re route ui to
+    //housekeeping
+    delete item;
+
+////at end of this take vector that was built and do dijkstas to it
+    ToDoList.push_back("In on_go2_clicked pass choices in and get custom trip order");
+//    *choices = Vector passed back by calling a custom trip dijkstras passing in *choices
+
+
+
+    //then re-route ui to visit all using the dijkstra's instead of MST
     ui->next->setEnabled(true);
     ui->navigateTrip->setCurrentIndex(ui->navigateTrip->indexOf(ui->all));
-    //merchTable
-
-   currentTravelIndex = 0;
-
-   //for merchandise table
-    ui->merchTable->setShowGrid(true);
-    ui->merchTable->setColumnCount(2);
-    ui->merchTable->setRowCount(0);
-    ui->merchTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
-
+    currentTravelIndex = 0;
     this->CustomBuy();
+}
 
+void MainWindow::on_cartBttn_clicked()
+{
+    ui->MainStack->setCurrentIndex(ui->MainStack->indexOf(ui->CartPage));
+}
+
+void MainWindow::on_ToTeamInfo_clicked()
+{
+    ui->MainStack->setCurrentIndex(ui->MainStack->indexOf(ui->TeamInfoPage));
+}
+
+void MainWindow::on_BacktoMain_clicked()
+{
+    ui->MainStack->setCurrentIndex(ui->MainStack->indexOf(ui->mainpage));
 }
