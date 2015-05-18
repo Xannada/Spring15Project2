@@ -32,6 +32,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+    //slots for buttons
 private slots:
     void on_TeamInfo_clicked();
 
@@ -110,8 +111,15 @@ private:
     //merchandies disatance variables
     //map aka merc type variable
     Merc merchandise;
+
+    //of type item represents each merchandise item, vector is relative to current stadium
+    //and will output all merchandise for that stadium
     vector<item> merchVec;
+
+    //is a stadium list used in admin window, and in some of the tours
     vector<QString> distTo;
+
+    //used in admin window, specifies which stadium we are editing
     QString stadiumNametoEditMerc;
 
     //Shopping cart
@@ -119,20 +127,53 @@ private:
 
     //MST
     MST *distmap;
+    int traveldist;
+    vector<dijknode> dikstras;
 
     //trip varies
+    //specifies which stadium you are in the vectors,
+    //used to traverse trip windows
     unsigned int currentTravelIndex;
+
+
+    //used when user specifies where they want to start the custom trip at
     QString startStadium;
+
+    //on buy will turn on or off the know when next button should be calling
+    //buy table or custom buy relative to each seperate tour
     bool callRegularBuyTable;
+
+
+    //choices is a subset of all the stadiums, might have to change parameter
+    //to some kind of node object, to acceess distances once theyre up
     vector<QString> *choices;
 
     //private methods
     bool createConnection();
+
+    //will create a table relative to sql database, will be able to show in
+    //logical order
     void initializeModel(QSqlTableModel *model);
+
+    //called through admin window, sets table for merchandise
+    //according to stadium you want to edit
     void setMercTableItems();
+
+    //populates table for heap aka shopping cart ordere by name
     void populateTable(Heap<Item, QString> *itemsHeap);
+
+    //popuates table for heap aka shopping cart ordered by price
     void populateTable(Heap<Item, float> *itemsHeap);
+
+    //buy table show merchandise while in trip to visit all stadiums
+    //allows user to click what they want to buy, is created dynamically
+    //to current Stadium
     void BuyTable();
+
+
+    //custom buy shows merchandise tables for when you are in custom tours
+    //allows user to chose merch and add to cart, and it relative to
+    //current Stadium you are at
     void CustomBuy();
 
 

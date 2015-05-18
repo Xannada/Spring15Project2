@@ -1,12 +1,3 @@
-/*************************************************************************
-*AUTHOR         : Steven Grenrock
-*STUDENT ID     : 816976
-*Assignement 7  : Heaps
-*CLASS 		    : CS1D
-*SECTION 		: T/Th 5:30p - 7:20p
-*DUE DATE 		: 03/10/2015
-*************************************************************************/
-
 #ifndef HEAP_H_
 #define HEAP_H_
 #include <vector>

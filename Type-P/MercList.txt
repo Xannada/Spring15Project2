@@ -8,7 +8,7 @@ Team Pennant
 Autographed baseball
 19.99
 0
-Angels Stadium of Anaheim
+Angel Stadium
 Baseball cap
 25.99
 Baseball bat
@@ -19,6 +19,16 @@ Autographed baseball
 19.99
 0
 Busch Stadium
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team Pennant
+12.99
+Autographed baseball
+19.99
+0
+Camden Yards
 Baseball cap
 25.99
 Baseball bat
@@ -98,17 +108,7 @@ Team Pennant
 Autographed baseball
 19.99
 0
-Globe Life Park in Arlington
-Baseball cap
-25.99
-Baseball bat
-35.35
-Team Pennant
-12.99
-Autographed baseball
-19.99
-0
-Great America Ball Park
+Great American Ballpark
 Baseball cap
 25.99
 Baseball bat
@@ -178,7 +178,7 @@ Team Pennant
 Autographed baseball
 19.99
 0
-Oriole Park at Camden Yards
+PETCO Park
 Baseball cap
 25.99
 Baseball bat
@@ -198,16 +198,6 @@ Team Pennant
 Autographed baseball
 19.99
 0
-Petco Park
-Baseball cap
-25.99
-Baseball bat
-35.35
-Team Pennant
-12.99
-Autographed baseball
-19.99
-0
 Progressive Field
 Baseball cap
 25.99
@@ -218,7 +208,7 @@ Team Pennant
 Autographed baseball
 19.99
 0
-Rogers Centre
+Rangers Ballpark
 Baseball cap
 25.99
 Baseball bat
@@ -228,7 +218,17 @@ Team Pennant
 Autographed baseball
 19.99
 0
-SafeCo Field
+Rogers Center
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team Pennant
+12.99
+Autographed baseball
+19.99
+0
+Safeco Field
 Baseball cap
 25.99
 Baseball bat
@@ -258,7 +258,7 @@ Team Pennant
 Autographed baseball
 19.99
 0
-Turner Field 
+Turner Field
 Baseball cap
 25.99
 Baseball bat

@@ -445,7 +445,7 @@
      <bool>true</bool>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="mainpage">
      <property name="palette">
@@ -2488,6 +2488,9 @@
         <height>401</height>
        </rect>
       </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+      </property>
       <property name="alternatingRowColors">
        <bool>true</bool>
       </property>
@@ -2633,6 +2636,9 @@
         <width>251</width>
         <height>261</height>
        </rect>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLineEdit" name="newPrice">

@@ -1,1300 +1,1860 @@
-Safeco Field
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-680
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
-1390
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-2070
-PNC Park
-0
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
+AT&T Park
+AT&T Park
 -1
-AT&T Park/O.co Coliseum
-Safeco Field
-680
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
+Angel Stadium
 340
-PETCO Park
-0
+Busch Stadium
+-1
+Camden Yards
+-1
 Chase Field
 650
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
+Citi Field
 -1
-Dodger Stadium/Angel Stadium
-Safeco Field
-0
-AT&T Park/O.co Coliseum
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
 340
-Dodger Stadium/Angel Stadium
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
 0
 PETCO Park
-110
-Chase Field
-0
-Coors Field
-0
+-1
+PNC Park
+-1
+Progressive Field
+-1
 Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+680
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Angel Stadium
+AT&T Park
+340
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
 0
-Minute Maid Park
-0
+Fenway Park
+-1
+Great American Ballpark
+-1
 Kauffman Stadium
-0
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+340
+PETCO Park
+110
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
 Target Field
 1500
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
 Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
 -1
-PETCO Park
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-110
-PETCO Park
-0
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Busch Stadium
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
 Chase Field
-300
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
 Coors Field
-830
-Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
+-1
+Dodger Stadium
+-1
 Fenway Park
-0
+-1
+Great American Ballpark
+310
+Kauffman Stadium
+235
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+680
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+465
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Camden Yards
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
 -1
 Chase Field
-Safeco Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+90
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+930
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
 0
-AT&T Park/O.co Coliseum
-650
-Dodger Stadium/Angel Stadium
-0
+O.co Coliseum
+-1
 PETCO Park
-300
+-1
+PNC Park
+195
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+560
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
 Chase Field
-0
+AT&T Park
+650
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
 Coors Field
 580
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+1115
+Nationals Park
+-1
+O.co Coliseum
+650
+PETCO Park
+300
+PNC Park
+-1
+Progressive Field
+-1
 Rangers Ballpark
 870
-Minute Maid Park
-1115
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
 Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-0
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Citi Field
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
 Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
+80
+Comerica Park
 -1
 Coors Field
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
+-1
+Dodger Stadium
+-1
+Fenway Park
+195
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
 PETCO Park
-830
+-1
+PNC Park
+315
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+0
+-5
+Citizens Bank Park
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+90
+Chase Field
+-1
+Citi Field
+80
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+90
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+80
+-5
+Comerica Park
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+90
+Rangers Ballpark
+-1
+Rogers Center
+210
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+240
+Wrigley Field
+240
+Yankee Stadium
+-1
+-5
+Coors Field
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
 Chase Field
 580
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
 Coors Field
-0
-Rangers Ballpark
-650
-Minute Maid Park
-0
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
 Kauffman Stadium
 560
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
 Marlins Park
-0
-Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
 -1
-Rangers Ballpark
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
 PETCO Park
-0
-Chase Field
 830
-Coors Field
-650
+PNC Park
+-1
+Progressive Field
+-1
 Rangers Ballpark
-0
-Minute Maid Park
-230
-Kauffman Stadium
-460
+650
+Rogers Center
+-1
+Safeco Field
+-1
 Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Dodger Stadium
+AT&T Park
+340
+Angel Stadium
 0
 Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-740
-Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-0
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
 Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
+-1
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
 Fenway Park
-0
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
 -1
 Minute Maid Park
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
+-1
+Nationals Park
+-1
+O.co Coliseum
+340
 PETCO Park
-0
+110
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+1500
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Fenway Park
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+195
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+1255
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+430
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+195
+-5
+Great American Ballpark
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+310
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+260
+Progressive Field
+225
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+790
+Turner Field
+375
+US Cellular Field
+250
+Wrigley Field
+250
+Yankee Stadium
+-1
+-5
+Kauffman Stadium
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+235
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+560
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+460
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+415
+Wrigley Field
+415
+Yankee Stadium
+-1
+-5
+Marlins Park
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+930
+Chase Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+1255
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+965
+Nationals Park
+930
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+210
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Miller Park
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+430
+Safeco Field
+-1
+Target Field
+300
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+80
+Wrigley Field
+80
+Yankee Stadium
+-1
+-5
+Minute Maid Park
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+680
+Camden Yards
+-1
 Chase Field
 1115
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
 Coors Field
-0
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+965
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+-1
 Rangers Ballpark
 230
-Minute Maid Park
-0
-Kauffman Stadium
-0
+Rogers Center
+-1
+Safeco Field
+-1
 Target Field
-0
-Busch Stadium
-680
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
+-1
 Tropicana Field
 790
-Marlins Park
-965
-Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
+Turner Field
 -1
-Kauffman Stadium
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Nationals Park
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
 0
 Chase Field
-0
+-1
+Citi Field
+-1
+Citizens Bank Park
+90
+Comerica Park
+-1
 Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+930
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+195
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
 560
-Rangers Ballpark
-460
-Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-235
-Miller Park
-0
-Wrigley Field/US Cellular Field
-415
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
+US Cellular Field
 -1
-Target Field
-Safeco Field
-1390
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-1500
-PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-465
-Miller Park
-300
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
+Wrigley Field
 -1
+Yankee Stadium
+-1
+-5
+O.co Coliseum
+AT&T Park
+0
+Angel Stadium
+340
 Busch Stadium
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
+-1
+Camden Yards
+-1
 Chase Field
-0
+650
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
 Coors Field
-0
-Rangers Ballpark
-0
+-1
+Dodger Stadium
+340
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
 Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
 680
-Kauffman Stadium
-235
 Target Field
-465
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-310
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
 -1
-Miller Park
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
 PETCO Park
-0
+AT&T Park
+-1
+Angel Stadium
+110
+Busch Stadium
+-1
+Camden Yards
+-1
 Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
 300
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-80
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-430
-PNC Park
-0
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
+Citi Field
 -1
-Wrigley Field/US Cellular Field
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-415
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-80
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-240
-Great American Ballpark
-250
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-0
 Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
 -1
 Comerica Park
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
-Chase Field
-0
+-1
 Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-240
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-90
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-210
-PNC Park
-0
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
+830
+Dodger Stadium
+110
 Fenway Park
-0
 -1
 Great American Ballpark
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-0
+-1
 Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-310
-Miller Park
-0
-Wrigley Field/US Cellular Field
-250
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-225
-Turner Field
-0
-Tropicana Field
-790
+-1
 Marlins Park
-0
-Rogers Center
-0
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
 PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+PNC Park
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+195
+Chase Field
+-1
+Citi Field
+315
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
 260
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+195
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
 -1
 Progressive Field
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
+115
 Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-0
+-1
+Rogers Center
+225
+Safeco Field
+-1
 Target Field
-0
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+315
+-5
+Progressive Field
+AT&T Park
+-1
+Angel Stadium
+-1
 Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
 Comerica Park
 90
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
 Great American Ballpark
 225
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
+Kauffman Stadium
+-1
 Marlins Park
-0
-Rogers Center
-0
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
 PNC Park
 115
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
 -1
 Turner Field
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
 Rangers Ballpark
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
+Chase Field
+830
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+650
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+460
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+230
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
 740
-Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-375
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-600
-Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-560
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
+US Cellular Field
 -1
-Tropicana Field
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Rogers Center
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
 Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-790
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-790
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-210
-Rogers Center
-0
-PNC Park
-0
-Nationals Park/Camden Yards
-0
+-1
+Citi Field
+-1
 Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
+-1
+Comerica Park
+210
+Coors Field
+-1
+Dodger Stadium
+-1
 Fenway Park
-0
+430
+Great American Ballpark
+-1
+Kauffman Stadium
 -1
 Marlins Park
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
+-1
+Miller Park
+430
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
 PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-965
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-210
-Marlins Park
-0
-Rogers Center
-0
+-1
 PNC Park
-0
-Nationals Park/Camden Yards
-930
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-1255
+225
+Progressive Field
+-1
+Rangers Ballpark
 -1
 Rogers Center
+-1
 Safeco Field
 2070
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-0
 Target Field
-0
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Safeco Field
+AT&T Park
+680
+Angel Stadium
+-1
 Busch Stadium
-0
-Miller Park
-430
-Wrigley Field/US Cellular Field
-0
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
 Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+680
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+2070
+Safeco Field
+-1
+Target Field
+1390
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Target Field
+AT&T Park
+-1
+Angel Stadium
+1500
+Busch Stadium
+465
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+1500
+Fenway Park
+-1
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+300
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+1390
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Tropicana Field
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+790
+Kauffman Stadium
+-1
+Marlins Park
 210
-Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-0
-PNC Park
-225
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-0
-Fenway Park
-430
+Miller Park
+-1
+Minute Maid Park
+790
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
 -1
 PNC Park
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-260
-Progressive Field
-115
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
-Rogers Center
-225
-PNC Park
-0
-Nationals Park/Camden Yards
-195
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-315
-Fenway Park
-0
 -1
-Nationals Park/Camden Yards
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
 Progressive Field
-0
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
 Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Turner Field
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
 560
-Tropicana Field
-0
-Marlins Park
-930
-Rogers Center
-0
-PNC Park
-195
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-90
-Citi Field/Yankee Stadium
-0
-Fenway Park
-0
+Chase Field
+-1
+Citi Field
 -1
 Citizens Bank Park
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
+-1
 Comerica Park
-0
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
 Great American Ballpark
-0
-Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
+375
+Kauffman Stadium
+-1
 Marlins Park
-0
-Rogers Center
-0
+600
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+560
+O.co Coliseum
+-1
+PETCO Park
+-1
 PNC Park
-0
-Nationals Park/Camden Yards
-90
+-1
+Progressive Field
+-1
+Rangers Ballpark
+740
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+US Cellular Field
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
 Citizens Bank Park
-0
-Citi Field/Yankee Stadium
+-1
+Comerica Park
+240
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+250
+Kauffman Stadium
+415
+Marlins Park
+-1
+Miller Park
 80
-Fenway Park
-0
--1
-Citi Field/Yankee Stadium
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
 Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
 Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-0
+-1
+Rangers Ballpark
+-1
 Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
 0
+Yankee Stadium
+-1
+-5
+Wrigley Field
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+-1
+Citizens Bank Park
+-1
+Comerica Park
+240
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+-1
+Great American Ballpark
+250
+Kauffman Stadium
+415
+Marlins Park
+-1
+Miller Park
+80
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
+PNC Park
+-1
+Progressive Field
+-1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+0
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
+Yankee Stadium
+AT&T Park
+-1
+Angel Stadium
+-1
+Busch Stadium
+-1
+Camden Yards
+-1
+Chase Field
+-1
+Citi Field
+0
+Citizens Bank Park
+80
+Comerica Park
+-1
+Coors Field
+-1
+Dodger Stadium
+-1
+Fenway Park
+195
+Great American Ballpark
+-1
+Kauffman Stadium
+-1
+Marlins Park
+-1
+Miller Park
+-1
+Minute Maid Park
+-1
+Nationals Park
+-1
+O.co Coliseum
+-1
+PETCO Park
+-1
 PNC Park
 315
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-80
-Citi Field/Yankee Stadium
-0
-Fenway Park
-195
--1
-Fenway Park
-Safeco Field
-0
-AT&T Park/O.co Coliseum
-0
-Dodger Stadium/Angel Stadium
-0
-PETCO Park
-0
-Chase Field
-0
-Coors Field
-0
-Rangers Ballpark
-0
-Minute Maid Park
-0
-Kauffman Stadium
-0
-Target Field
-0
-Busch Stadium
-0
-Miller Park
-0
-Wrigley Field/US Cellular Field
-0
-Comerica Park
-0
-Great American Ballpark
-0
 Progressive Field
-0
-Turner Field
-0
-Tropicana Field
-0
-Marlins Park
-1255
-Rogers Center
-430
-PNC Park
-0
-Nationals Park/Camden Yards
-0
-Citizens Bank Park
-0
-Citi Field/Yankee Stadium
-195
-Fenway Park
-0
 -1
+Rangers Ballpark
+-1
+Rogers Center
+-1
+Safeco Field
+-1
+Target Field
+-1
+Tropicana Field
+-1
+Turner Field
+-1
+US Cellular Field
+-1
+Wrigley Field
+-1
+Yankee Stadium
+-1
+-5
